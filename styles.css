@@ -57,3 +57,54 @@ html {
   font-family: "JujutsuKaisen";
   src: url("Fonts/JujutsuKaisen.ttf") format("truetype");
 }
+
+.playAudioButtons {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.flex_container {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  background-image: linear-gradient(
+    92.88deg,
+    #b54545 9.16%,
+    #ff2600 43.89%,
+    #d73f3f 64.72%
+  );
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "JujutsuKaisen";
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  width: 130px;
+  margin: 5px;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: rgba(205, 63, 63, 0.5) 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0 2.6rem;
+  }
+}

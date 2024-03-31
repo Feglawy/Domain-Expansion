@@ -19,3 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
     enterFullscreen();
   });
 });
+var currentAudio = null;
+
+function PlayAudio(audioId) {
+  var audio = document.getElementById(audioId);
+
+  if (currentAudio && currentAudio !== audio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+
+  audio.play();
+  currentAudio = audio;
+}
