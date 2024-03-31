@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     enterFullscreen();
   });
 });
-var currentAudio = null;
+var currentAudio = document.getElementById("ost");
 
 function PlayAudio(audioId) {
   var audio = document.getElementById(audioId);
